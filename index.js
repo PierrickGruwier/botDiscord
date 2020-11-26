@@ -1,8 +1,7 @@
 const Discord = require("discord.js");
-const config = require("./config.json");
 const client = new Discord.Client();
 const fetch = require('node-fetch');
-client.login(config.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN);
 const api = require('chuck-norris-api');
 
 const prefix = "!";
